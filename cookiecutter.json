@@ -1,0 +1,7 @@
+{
+    "project_name": "Simple LDML Template",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "keyboard_locale": "en",
+    "keyboard_language": "English",
+    "author": "Anonymous"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboardTest3 conformsTo="techpreview">
+  <info keyboard="{{ cookiecutter.project_slug }}.xml" author="{{ cookiecutter.author }}" name="{{ cookiecutter.project_slug }}" />
+
+  <tests name="separate">
+    <!-- test direct key output
+    https://www.unicode.org/reports/tr35/tr35-keyboards.html#element-key -->
+    <test name="key-1">
+      <keystroke key="1" />
+      <check result="1:basic:OK" />
+    </test>
+  </tests>
+</keyboardTest3>

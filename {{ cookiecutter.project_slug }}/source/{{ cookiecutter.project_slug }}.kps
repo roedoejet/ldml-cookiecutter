@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.267.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">{{ cookiecutter.project_name }}</Name>
+    <Copyright URL="">Copyright © {{ cookiecutter.author }}</Copyright>
+    <Author URL="">{{ cookiecutter.author }}</Author>
+    <Description URL="">Test Keyboard</Description>
+    <Version URL=""></Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\{{ cookiecutter.project_slug }}.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\{{ cookiecutter.project_slug }}.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>{{ cookiecutter.project_name }}</Name>
+      <ID>{{ cookiecutter.project_slug }}</ID>
+      <Version>1.0.0</Version>
+      <Languages>
+        <Language ID="{{ cookiecutter.keyboard_locale }}">{{ cookiecutter.keyboard_language }}</Language>
+      </Languages>
+      <Examples/>
+    </Keyboard>
+  </Keyboards>
+  <RelatedPackages/>
+  <Strings/>
+</Package>

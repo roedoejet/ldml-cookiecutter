@@ -6,6 +6,8 @@ This is a template for creating a basic LDML keyboard template.
 
 - pip install cookiecutter
 - cookiecutter <path_to_cookiecutter.zip>
+- install the keyman compiler: npm install -g @keymanapp/kmc
+- compile the project: kmc <path_to_cookiecutter_project>
 
 ## Contributing
 
